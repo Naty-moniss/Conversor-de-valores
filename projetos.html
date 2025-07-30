@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+     <link rel="stylesheet" href="index.css">
+     <script src="script.js"></script>
+
+</head>
+  <div class="caixa" role="main" aria-label="Currency converter">
+    <h1>Conversor de Moedas</h1>
+    <div class="conversor">
+      <label for="valor">Valor em moeda de origem:</label>
+      <input type="number" id="valor" placeholder="Digite o valor" aria-required="true" aria-describedby="resultado" />
+      <label for="moeda-origem">De:</label>
+      <select id="moeda-origem" aria-required="true">
+        <option value="BRL">Real (BRL)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="USD">Dólar (USD)</option>
+      </select>
+      <label for="moeda-destino">Para:</label>
+      <select id="moeda-destino" aria-required="true">
+        <option value="BRL">Real (BRL)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="USD">Dólar (USD)</option>
+      </select>
+      <button type="button" onclick="converterMoeda()" aria-label="Converter moeda">Converter</button>
